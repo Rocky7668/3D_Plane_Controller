@@ -1,0 +1,220 @@
+{
+    "name": "new Input Action",
+    "maps": [
+        {
+            "name": "AirCraft",
+            "id": "43f4a9a1-4191-41dd-bc87-81e8976f3acb",
+            "actions": [
+                {
+                    "name": "pitch",
+                    "type": "Value",
+                    "id": "2dbb58b5-575e-4b93-8662-682fe2824a04",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Roll Out",
+                    "type": "Value",
+                    "id": "ab184665-063c-488f-8366-3455a5169e6b",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Start Global Engine",
+                    "type": "Button",
+                    "id": "17376423-a649-4146-9f1a-f162f508a414",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Stop Global Engine",
+                    "type": "Button",
+                    "id": "af73cd13-ea86-4de1-b10f-0c01fa56c6a5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Camera Change",
+                    "type": "Button",
+                    "id": "49c7d189-0fcf-49ff-97e4-a9763525da19",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Throttle Lever",
+                    "type": "Value",
+                    "id": "f2527d17-8163-400b-b3d7-7915ab0acd26",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "New action",
+                    "type": "Value",
+                    "id": "529aa240-96d9-4744-93c5-e9058dcd6506",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "47f62782-3ba4-41dc-8718-e09347177970",
+                    "path": "2DVector(mode=2)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "pitch",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "bd2ce49c-5702-4bbd-a0b2-5756ada35228",
+                    "path": "<HID::Logitech X52 H.O.T.A.S.>/stick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "pitch",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "b9f618f5-e863-45c3-9f9f-b727cc575178",
+                    "path": "<HID::Logitech X52 H.O.T.A.S.>/stick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "pitch",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "f6f11f0c-0486-4c86-972b-e0e1c96bd24a",
+                    "path": "2DVector(mode=2)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll Out",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "c7f47ded-ba63-43d2-9be2-03c54cd5581e",
+                    "path": "<HID::Logitech X52 H.O.T.A.S.>/stick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll Out",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "79e4bb97-0419-401a-9549-5204e593ce38",
+                    "path": "<HID::Logitech X52 H.O.T.A.S.>/stick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll Out",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "636b2930-df3c-4c8b-a838-6970c9ac0eee",
+                    "path": "<Keyboard>/f1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Start Global Engine",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "46a45b8a-af54-49f6-9c2b-9c8d6dafd9fa",
+                    "path": "<Keyboard>/f2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Stop Global Engine",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aa202d10-605d-4482-8826-37578624e0b3",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Camera Change",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "ecda2f1d-978b-445d-9166-feaebaebc95a",
+                    "path": "2DVector(mode=1)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Throttle Lever",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Up",
+                    "id": "edc19a08-6e88-47b2-9eed-7be7cca452aa",
+                    "path": "<HID::Logitech X52 H.O.T.A.S.>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Throttle Lever",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "77171062-d61e-4d57-b9d4-ba91362610a6",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Up",
+                    "id": "c3d3661f-aa26-4676-9640-0e2d9ef05668",
+                    "path": "<HID::Logitech X52 H.O.T.A.S.>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
